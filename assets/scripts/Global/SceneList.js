@@ -1,4 +1,4 @@
-const TipsManager = require('TipsManager');
+// const TipsManager = require('TipsManager');
 const TransitionMaterials = require('transition-materials');
 
 const SceneList = cc.Class({
@@ -38,12 +38,13 @@ const SceneList = cc.Class({
         this.updateTimer = 0;
         this.updateInterval = 0.2;
         this.lastContentPosY = 0; // use this variable to detect if we are scrolling up or down
-        TipsManager.init();
+        // TipsManager.init();
         this.initList();
     },
 
     // use this for initialization
     initList () {
+        cc.log('materials: ' + TransitionMaterials.length);
         let y = 0;
         this.node.height = (TransitionMaterials.length + 1) * 50;
         let initItemCount = Math.min(this.initItemCount, TransitionMaterials.length);

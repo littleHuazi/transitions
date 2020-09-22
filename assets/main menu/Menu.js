@@ -1,6 +1,6 @@
-const i18n = require('i18n');
+// const i18n = require('i18n');
 const SceneList = require('SceneList');
-const TipsManager = require('TipsManager');
+// const TipsManager = require('TipsManager');
 
 const Transitions = require('transitions');
 const TransitionMaterials = require('transition-materials');

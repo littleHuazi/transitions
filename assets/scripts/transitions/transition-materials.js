@@ -6,6 +6,7 @@ cc.game.on(cc.game.EVENT_GAME_INITED, () => {
             return;
         }
         materials.length = 0;
+        cc.log('materials length: ' + assets.length);
         for (let i = 0; i < assets.length; i++) {
             materials.push(assets[i]);
         }
