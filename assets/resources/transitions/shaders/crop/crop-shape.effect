@@ -172,7 +172,7 @@ CCProgram diamond-fs %{
 precision highp float;
 
 const float PI = 3.141592653589793;
-float deg = 45.0 / 180. * PI;
+const float deg = 45.0 / 180. * PI;
 mat2 rotation = mat2(
   cos(deg), sin(deg),
   -sin(deg), cos(deg)
